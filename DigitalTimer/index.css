@@ -7,7 +7,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(to right, #ffffff, #cffcf1);
+  height: 100vh;
+  background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
   box-shadow: 0px 4px 16px 0px #bfbfbf;
 }
 .heading {
@@ -22,21 +23,37 @@
 }
 .timer-container {
   background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
-  height: 70px;
-  width: 80px;
+  background-size: cover;
+  height: 650px;
+  width: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.white-card-timer {
+  background-color: #ffffff;
+  height: 150px;
+  width: 150px;
+  border-radius: 80px;
+  border-width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 .time {
   color: #00d9f5;
   font-size: 35px;
   font-weight: 500;
+  margin: 30px;
 }
 .timer-status {
   color: #1e293b;
   font-size: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .timer-operations-container {
   display: flex;
@@ -54,15 +71,50 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
-.timer-buttons{
-    background-color: transparent;
-    border-width: 0px;
-    outline: none;
+.timer-buttons {
+  background-color: transparent;
+  border-width: 0px;
+  cursor: pointer;
 }
 .reset-cont {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 20px;
+}
+.operations-btn {
+  height: 40px;
+  width: 40px;
+}
+.set-timer-limit-para {
+  color: #0f172a;
+  font-weight: 600;
+}
+.inc-dec-button-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.inc-dec-btn {
+  background-color: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  margin: 30px;
+  color: #0f172a;
+  font-size: 25px;
+  font-weight: bold;
+}
+.set-time-number {
+  background-image: linear-gradient(to right, #cffcf1, #defafe, #00d9f5);
+  height: 50px;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 0px;
+  padding: 6px;
+  font-size: 30px;
 }
